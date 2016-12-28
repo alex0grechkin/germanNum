@@ -477,7 +477,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+        
         QMessageBox msg;
+        msg.setText("Это небольшое изминение данной функции для комита");
+        msg.exec();
         QString tmp="";
         tmp = ui->lineEdit->text();
         Parser parser(tmp);
